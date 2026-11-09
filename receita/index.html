@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRI NA COZINHA</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--CABEÇALHO-->
+    <header>
+        <a href="index.html" class="logo"><img src="/img/logo.png" alt="logo" ></a>
+
+        <nav>
+            <a href="index.html">Home</a>
+        </nav>
+
+        <input type="text" id="searchInput" placeholder="🔍Pesquisar...">
+
+        <nav>
+            <a href="sobre.html">Nos conheça</a>
+        </nav>
+          <nav>
+            <a href="vlogs.html">Vlogs de receitas</a>
+        </nav>
+
+        <a href="https://www.ifood.com.br/" target="_blank"> Delivery</a>
+    </header>
+
+    <!--LISTA DE RECEITAS-->
+    <main>
+        <h2>SEJA BEM VINDA AS RECEITAS DA PRI!</h2>
+        <div class="Grid" id="recipeGrid"></div>
+    </main>
+
+    <!--TELA DAS RECEITAS-->
+    <div class="modal" id="recipeModal">
+        <div class="modal-content">
+            <button id="closeModal">X</button>
+            <img id="modalImg" src="" alt="">
+            <h2 id="modalTitle"></h2>
+            <h3>Ingredientes</h3>
+            <ul id="modalIngredients"></ul>
+            <h3>Modo de Preparo</h3>
+            <ol id="modalInstructions"></ol>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
